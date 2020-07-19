@@ -1,0 +1,42 @@
+.label {
+    background-color: black;
+    color: #643685;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.screen {
+    height: 40%;
+    max-height: 40%;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#screen-input {
+    width: 100% !important;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+}
+
+#screen-input:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.key {
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 10px;
+    color: #643685;
+    font-weight: bolder;
+    transform: scale3d(10);
+}
+
+.keyboard {
+    width: 300px !important;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YotvChannelsApp</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/assets/register.css">
+    <link rel="stylesheet" href="/assets/phone.css">
+</head>
+
+<body>
+    <main>
+        <!-- Top Fixed Navbar -->
+        <div class="row">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-dark b-black fixed-top top-nav">
+                    <div class="b-black row w-100">
+                        <ul class="navbar-nav flex-row ml-2 ml-md-3">
+                            <li class="nav-item active text-white mr-3">
+                                <a class="nav-link text-danger font-weight-bold" href="/index.html"><i
+                                        class="fa fa-arrow-left px-2"></i>YOTV
+                                    HOME</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="navbar-nav flex-row ml-auto">
+                            <li class="nav-item active my-auto our" id="user_number">
+                                User
+                            </li>
+                            <li>
+                                <a href="index.html" class="btn btn-danger buttoned mx-2 rounded">Home</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container pt-4 padded">
+
+                <div class="col-10 col-lg-6 mx-auto pt-4">
+
+                    <div class="card">
+                        <div class="card-header text-center font-weight-bold">
+                            YOTV INTERFACE
+                        </div>
+                        <form id="formInput">
+                            <div class="card-body">
+                                <h5 class="card-title">Your Number</h5>
+
+                                <div class="form-group">
+                                    <input id="number-input" class="form-control number-input" type="text"
+                                        name="number-input" placeholder="eg : 0771090789  / 0758090452">
+                                </div>
+
+                                <div class="form-group d-none" id="payment">
+                                    <label for="my-select">Payment Plan</label>
+                                    <select id="my-select" class="form-control font-weight-bold" name="payment">
+                                        <option selected value="">None</option>
+                                        <option value="500">Hourly 500</option>
+                                        <option value="1000">Daily 1000</option>
+                                        <option value="2500">Weekly 2500</option>
+                                        <option value="2500">Monthly 10,000</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="card-footer text-right">
+
+                                <button class="btn btn-dark font-weight-bold ml-auto" type="submit"> Submit </button>
+
+                            </div>
+                        </form>
+                        <div class="card row mb-1 ml-1 mr-1 mt-0">
+
+                            <div class="container-fluid" id="output">
+                                <p class="lead">
+                                    Output
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+    <footer class="row b-black text-light mt-4">
+
+        <div class="row bg-dark w-100">
+            <p class="lead py-2 px-5">
+                <i class="bx bx-copyright"></i> 2020
+                YotvChannels Albayan Media
+            </p>
+        </div>
+    </footer>
+
+    <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="alert" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="text-danger">Error</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="alertMsg" class="text-danger">Couldnot use letters as numbers.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/request.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.js"></script>
+
+</html>

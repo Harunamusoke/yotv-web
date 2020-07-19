@@ -1,0 +1,41 @@
+body {
+  background-color: #643685;
+  margin: 0;
+  padding: 0;
+}
+
+.our {
+  color: #643685;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.b-black {
+  background-color: black;
+}
+
+.padded {
+  margin-top: 30px !important;
+}
+
+.card-header {
+  background-color: yellow;
+}
+
+.card-footer {
+  background-color: red;
+}
+
+.card {
+  border-style: none !important;
+}
+
+.buttoned {
+  border-radius: 10px;
+  z-index: 99;
+  transform: translate3d(500);
+}
+
+main {
+  min-height: 100vh;
+}
