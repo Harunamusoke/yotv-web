@@ -36,7 +36,7 @@ $(document).ready(function () {
     requestFunc();
   });
 
-  function requestFunc() {
+  function requestFunc(url = "") {
     $.ajax({
       type: "GET",
       url: apiUrl,
