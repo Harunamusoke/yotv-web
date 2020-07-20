@@ -17,7 +17,10 @@ $(document).ready(function () {
       setTimeout(() => {
         alertModal.modal("hide");
       }, 2000);
-      userInput.val(value.match(/\d+/g).map(Number));
+
+      const valueSet = value.match(/\d+/g).reduce((a, b) => a + "" + b); //.map((a) => a + "");
+      userInput.val(valueSet);
+      // console.log(valueSet);
       // userInput.val(value.replace(/^\D+/g, ""));
       return;
     }
